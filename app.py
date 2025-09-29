@@ -18,9 +18,9 @@ def sjekk_brukere():
     return render_template("brukersjekk.html", sjekk_bruker = "bob", brukere = {"alice": "passord123", "bob": "hemmelig", "carol": "abc123"})
     
     
-@app.route('/brukerfinn.html')
+"""@app.route('/brukerfinn.html')
 def brukerfinn():
     return render_template("brukerfinn.html", sjekk_bruker = "bob", brukere = {"alice": "passord123", "bob": "hemmelig", "carol": "abc123"})
-
+"""
 if __name__ == "__main__":
     app.run()
