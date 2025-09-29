@@ -8,9 +8,9 @@
 <body>
     <h1> Resultat av if-test </h1>
     {% if sjekk_bruker in brukere %}
-        <p> Bruker bob finnes i systemet! </p>
+        <p> Bruker {{sjekk_bruker}} finnes i systemet! </p>
     {% else %}
-        <p> Bruker bob finnes ikke. </p>
+        <p> Bruker {{sjekk_bruker}} finnes ikke. </p>
     {% endif %}
 
 </body>
