@@ -7,6 +7,8 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+
+
 @app.route('/brukersjekk.html')
 def sjekk_brukere():
     brukere = {
@@ -15,7 +17,7 @@ def sjekk_brukere():
     "carol": "abc123"
     }
     sjekk_bruker = "bob"
-    return render_template("brukersjekk.html")
+    return render_template("brukersjekk.html", sjekk_bruker = "bob", brukere = {"alice": "passord123", "bob": "hemmelig", "carol": "abc123"})
     
 if __name__ == "__main__":
     app.run()
