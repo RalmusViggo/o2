@@ -15,7 +15,7 @@ def sjekk_brukere():
     "carol": "abc123"
     }
     sjekk_bruker = "bob"
-    return render_template("brukersjekk.html", sjekk_bruker = "bob", brukere = {"alice": "passord123", "bob": "hemmelig", "carol": "abc123"})
+    return render_template("brukersjekk.html", sjekk_bruker = "per", brukere = {"alice": "passord123", "bob": "hemmelig", "carol": "abc123"})
     
     
 """@app.route('/brukerfinn.html')
